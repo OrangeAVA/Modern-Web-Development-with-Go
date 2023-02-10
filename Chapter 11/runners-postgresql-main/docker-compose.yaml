@@ -1,0 +1,5 @@
+version: "3"
+services:
+  runners-app:
+    image: runners-app:latest
+    network_mode: "host"

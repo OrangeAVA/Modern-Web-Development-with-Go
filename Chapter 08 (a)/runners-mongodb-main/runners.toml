@@ -1,0 +1,16 @@
+###############################################################################
+# Database configuration
+
+# Connection string is in Go mongodb driver format:
+# mongodb://host:port
+
+[database]
+
+connection_string = "mongodb://localhost:27017"
+###############################################################################
+# HTTP server configuration
+
+[http]
+
+server_address = ":8080"
+###############################################################################

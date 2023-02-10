@@ -1,0 +1,16 @@
+[{
+    "Create": {
+        "IndexName": "runners_global_index",
+        "KeySchema": [
+            { "AttributeName": "country", "KeyType": "HASH" },
+            { "AttributeName": "personal_best", "KeyType": "RANGE" }
+        ],
+        "Projection": {
+            "ProjectionType": "ALL"
+        },
+        "ProvisionedThroughput": {
+            "ReadCapacityUnits": 5,
+            "WriteCapacityUnits": 5
+        }
+    }
+}]

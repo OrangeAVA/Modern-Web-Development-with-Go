@@ -1,0 +1,15 @@
+{
+    "TableName": "Results",
+    "KeySchema": [
+        { "AttributeName": "runner_id", "KeyType": "HASH" },
+        { "AttributeName": "race_result", "KeyType": "RANGE" }
+    ],
+    "AttributeDefinitions": [
+        { "AttributeName": "runner_id", "AttributeType": "S" },
+        { "AttributeName": "race_result", "AttributeType": "S" }
+    ],
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 5,
+        "WriteCapacityUnits": 5
+    }
+}

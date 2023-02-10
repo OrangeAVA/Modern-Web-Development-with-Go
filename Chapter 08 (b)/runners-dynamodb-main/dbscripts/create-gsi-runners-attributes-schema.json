@@ -1,0 +1,4 @@
+[
+    { "AttributeName": "country", "AttributeType": "S" },
+    { "AttributeName": "personal_best", "AttributeType": "S" }
+]

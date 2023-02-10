@@ -1,0 +1,19 @@
+###############################################################################
+# Database configuration
+
+# Connection string is in Go dynamodb driver format:
+# http://host:port
+
+[database]
+
+connection_string = "http://localhost:8000"
+aws_region = "region"
+aws_access_key_id = "dusan"
+aws_secret_access_key = "dusan"
+###############################################################################
+# HTTP server configuration
+
+[http]
+
+server_address = ":8080"
+###############################################################################

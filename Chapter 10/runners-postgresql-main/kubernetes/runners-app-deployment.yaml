@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: runners-app
+spec:
+  selector:
+    matchLabels:
+      app: runners-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: runners-app
+    spec:
+      containers:
+        - image: runners-app:latest
+          name: runners-app
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ENV
+              value: "k8s"
