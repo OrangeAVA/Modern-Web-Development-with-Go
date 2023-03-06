@@ -27,4 +27,3 @@ After reading this book, the readers can independently develop Web Server Applic
 
 ● Understand and know how to apply monitoring and alerting concepts.
 
-## Related Products
